@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+            padding: 0px;
+            color: white;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: row;
+            justify-content:center;
+            width: 100%;
+            padding: 20px 15px 20px 15px;
+        }
+
+        nav a {
+            color: silver;
+            text-decoration: none;
+            margin: 0px 15px;
+            font-size: 22px;
+        }
+
+        .container {
+            width: 1200px;
+            margin: 0 auto;
+            padding: 60px 10px;
+
+        }
+
+        .intro {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            width: 700px;
+            margin: 0 auto;
+        }
+
+        .img {
+            flex: 0 0 40%;
+            max-width: 40%;
+            padding-right: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 100%;
+
+        }
+
+        .text {
+            color: white;
+            flex: 0 0 60%;
+            max-width: 60%;
+            text-align: right;
+        }
+
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0px -10px;
+
+        }
+
+        .upper {
+            padding: 0px 10px;
+            flex: 0 0 33.33%;
+            margin-bottom: 20px;
+            
+        }
+
+        .proj {
+            border: 1px solid white;
+            padding: 20px;
+            text-align: center;
+            
+        }
+
+        span {
+            font-size: 18px;
+        }
+
+        @media (max-width:1240px) {
+
+            .container {
+                width: 990px;
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width:991px) {
+
+            .container {
+                width: 799px;
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width:798px) {
+
+            .container {
+                width: 500px;
+                max-width: 100%;
+            }
+
+            .intro {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                width: 60vh;
+                margin: 0 auto;
+            }
+
+            .img {
+                flex: 0 0 40vh;
+                max-width: 40vh;
+                padding-right: 20px;
+            }
+
+            img {
+                max-width: 100%;
+                border-radius: 100%;
+
+            }
+
+            .text {
+                color: white;
+                flex: 0 0 30vh;
+                max-width: 60vh;
+                text-align: center;
+            }
+
+            .upper {
+                padding: 0px 10px;
+                flex: 0 0 50%;
+                margin-bottom: 20px;
+            }
+        }
+
+        @media (max-width:501px) {
+
+            .container {
+                width: 100%;
+                margin: 0 auto;
+                max-width: 100%;
+            }
+
+            nav {
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+                padding: 20px 15px 20px 15px;
+            }
+
+            nav a {
+                color: silver;
+                text-decoration: none;
+                margin: 4px 15px;
+                font-size: 22px;
+            }
+
+            .upper {
+                padding: 0px 10px;
+                flex: 0 0 100%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="#">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#prj">Experience</a>
+        <a href="#">Contact</a>
+    </nav>
+    <section class="container">
+        <div class="intro">
+            <div class="img">
+                <img src="/y.JPG" alt="">
+            </div>
+
+            <div class="text">
+                <span>
+                    <h1>I'm Yash</h1>
+                </span>
+                <span>Python, Data Science, Django</span><br>
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias magnam atque aliquid.
+                    Explicabo quasi praesentium nostrum hic sint neque assumenda!</span>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="projects" id="projects">
+            <div class="upper">
+                <div class="proj">
+                    <h2>Image Classifier</h2><br>
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, tenetur nulla! Aspernatur placeat
+                        dolor laboriosam! Et similique dolorem tempore sunt eius laborum doloribus obcaecati at neque
+                        quasi debitis aperiam reprehenderit enim minima ipsa, amet voluptatibus consequatur commodi
+                        aliquam quidem iste odio, sequi rem. Dolor deserunt quisquam iure cumque, quidem nulla?</span>
+                </div>
+            </div>
+            <div class="upper">
+                <div class="proj">
+                    <h2>Image Classifier</h2><br>
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, tenetur nulla! Aspernatur placeat
+                        dolor laboriosam! Et similique dolorem tempore sunt eius laborum doloribus obcaecati at neque
+                        quasi debitis aperiam reprehenderit enim minima ipsa, amet voluptatibus consequatur commodi
+                        aliquam quidem iste odio, sequi rem. Dolor deserunt quisquam iure cumque, quidem nulla?</span>
+                </div>
+            </div>
+            <div class="upper">
+                <div class="proj">
+                    <h2>Image Classifier</h2><br>
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, tenetur nulla! Aspernatur placeat
+                        dolor laboriosam! Et similique dolorem tempore sunt eius laborum doloribus obcaecati at neque
+                        quasi debitis aperiam reprehenderit enim minima ipsa, amet voluptatibus consequatur commodi
+                        aliquam quidem iste odio, sequi rem. Dolor deserunt quisquam iure cumque, quidem nulla?</span>
+                </div>
+            </div>
+            <div class="upper">
+                <div class="proj">
+                    <h2>Image Classifier</h2><br>
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, tenetur nulla! Aspernatur placeat
+                        dolor laboriosam! Et similique dolorem tempore sunt eius laborum doloribus obcaecati at neque
+                        quasi debitis aperiam reprehenderit enim minima ipsa, amet voluptatibus consequatur commodi
+                        aliquam quidem iste odio, sequi rem. Dolor deserunt quisquam iure cumque, quidem nulla?</span>
+                </div>
+            </div>
+            <div class="upper">
+                <div class="proj">
+                    <h2>Image Classifier</h2><br>
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, tenetur nulla! Aspernatur placeat
+                        dolor laboriosam! Et similique dolorem tempore sunt eius laborum doloribus obcaecati at neque
+                        quasi debitis aperiam reprehenderit enim minima ipsa, amet voluptatibus consequatur commodi
+                        aliquam quidem iste odio, sequi rem. Dolor deserunt quisquam iure cumque, quidem nulla?</span>
+                </div>
+            </div>
+            <div class="upper">
+                <div class="proj">
+                    <h2>Image Classifier</h2><br>
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, tenetur nulla! Aspernatur placeat
+                        dolor laboriosam! Et similique dolorem tempore sunt eius laborum doloribus obcaecati at neque
+                        quasi debitis aperiam reprehenderit enim minima ipsa, amet voluptatibus consequatur commodi
+                        aliquam quidem iste odio, sequi rem. Dolor deserunt quisquam iure cumque, quidem nulla?</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
