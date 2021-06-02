@@ -153,7 +153,7 @@
         @media screen and (max-width:501px) {
 
             .container {
-                width: 100%;
+                width: 100vw;
                 margin: 0 auto;
                 max-width: 100%;
             }
@@ -173,11 +173,14 @@
                 margin: 4px 15px;
                 font-size: 22px;
             }
+            .vis{
+                display: none;
+            }
             .intro {
                 display: flex;
                 align-items: center;
                 flex-direction: column;
-                width: 60vw;
+                width: 80vw;
                 margin: 0 auto;
             }
 
@@ -195,8 +198,8 @@
 
             .text {
                 color: white;
-                flex: 0 0 40vw;
-                max-width:40vw;
+                flex: 0 0 80vw;
+                max-width:80vw;
                 text-align: center;
             }
 
@@ -205,17 +208,20 @@
                 flex: 0 0 100%;
                 margin-bottom: 20px;
             }
+            .nav:hover .vis{
+                display: block;
+            }
         }
     </style>
 </head>
 
 <body>
 
-    <nav>
+    <nav class="nav">
         <a href="#">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#prj">Experience</a>
-        <a href="#">Contact</a>
+        <a href="#projects" class="vis">Projects</a>
+        <a href="#prj" class="vis">Experience</a>
+        <a href="#" class="vis">Contact</a>
     </nav>
     <section class="container">
         <div class="intro">
